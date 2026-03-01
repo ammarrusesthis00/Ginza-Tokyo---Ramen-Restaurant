@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+  font-family: "ClassyVogue";
+  src: url("/src/assets/fonts/ClassyVoguePersonalUse.otf") format("opentype");
+}
+
+@import "tailwindcss";
+
+.font-classy {
+    font-family: "ClassyVogue", sans-serif;
+}
+
+.font-rope {
+    font-family: 'Manrope', sans-serif;
+}
+
+.bgc {
+    background-color: #272727;
+}
+
+body {
+    background-color: #121212;
+}
+
+.bg-red {
+    background-color: #E63946;
+}
+.bg-yellow {
+    background-color: #ffd166;
+}
