@@ -35,7 +35,7 @@ export default function Hero() {
 
 
         <div className="max-h-[90vh]">
-          <img src={Image2} alt=""  className="rounded-lg"/>
+          <img src={Image2} alt=""  className="rounded-lg w-full max-w-xl mx-auto"/>
         </div>
         </div>
         </header>
