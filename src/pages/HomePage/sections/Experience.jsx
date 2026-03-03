@@ -1,30 +1,47 @@
-import RestaurantView from "../../../assets/videos/restaurant-view.mp4";
+import Image1 from "../../../assets/images/image1.webp";
 
 export default function Experience() {
-    return (
-        <section className="w-[90%] mx-auto max-w-6xl relative max-h-[600px] h-[80vh] w-full overflow-hidden">
-  {/* Full-background video */}
-  <video
-    src={RestaurantView}
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full rounded-lg h-full grayscale-[80%] object-cover"
-  />
+  const items = [
+    {
+      title: "Warm Interior",
+      description: "Soft lighting and natural wood tones create a calm atmosphere."
+    },
+    {
+      title: "Crafted Coffee",
+      description: "Every cup prepared with precision and quality beans."
+    },
+    {
+      title: "Cozy Corners",
+      description: "Comfortable seating designed for long conversations."
+    },
+    {
+      title: "Modern Minimalism",
+      description: "Clean design with subtle details and balanced space."
+    }
+  ];
 
-  {/* Overlay to darken video so text is readable */}
-  <div className="absolute inset-0 bg-black/50"></div>
+  return (
+    <section className="w-[90%] mx-auto max-w-6xl space-y-8 pb-26">
+      <div className="space-y-2">
+        <h2 className="text-white text-2xl md:text-3xl font-classy">The Experience</h2>
+        <p className="text-gray-100 font-rope font-light max-w-[90ch]">
+          Step inside a space designed for comfort, connection, and carefully crafted moments.
+        </p>
+      </div>
 
-  {/* Content in front of the video */}
-  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-    <h2 className="text-white text-3xl font-classy mb-4">
-      Experience Authentic Ramen
-    </h2>
-    <p className="text-gray-200 max-w-xl font-light font-rope">
-      From handcrafted noodles to slow-simmered broths, every bowl is a journey in flavor.
-    </p>
-  </div>
-</section>
-    )
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center justify-items-center">
+            {items.map((item, i) => (
+              <div key={i} className="lg:max-w-[70%] text-center space-y-4 flex flex-col justify-between relative">
+                  <img src={Image1} alt={item.name} className="w-full rounded-lg" />img
+                  <div className="space-y-1 absolute bottom-10 px-2">
+                    <h4 className="text-xl text-white font-classy">{item.title}</h4>
+                    <p className="text-sm text-gray-100 font-rope font-light">
+                        {item.description}
+                    </p>
+                  </div>
+              </div>
+            ))}
+        </div>
+    </section>
+  );
 }
