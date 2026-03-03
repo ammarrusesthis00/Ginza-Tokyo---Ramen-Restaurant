@@ -3,7 +3,7 @@ import { Menu } from "lucide-react";
 export default function Navbar() {
     return (
         <>
-            <nav className="text-white flex flex-col py-2 md:py-4 lg:py-6">
+            <nav className="text-white flex flex-col pt-5">
                 <div id="mobile" className="md:hidden">
                     <div className="flex items-center justify-between">
                         <h2 className="text-xl font-classy">Ginza Tokyo</h2>
@@ -15,11 +15,10 @@ export default function Navbar() {
                     <div className="">
                         <h2 className="text-2xl font-classy">Ginza Tokyo</h2>
                     </div>
-                    <ul className="flex items-center gap-4">
+                    <ul className="flex items-center gap-6">
                         <a href="" className="font-rope font-light">About Us</a>
                         <a href="" className="font-rope font-light">Gallery</a>
                         <a href="" className="font-rope font-light">Location</a>
-                        <a href="" className="font-rope font-light">FAQs</a>
                         <a href="" className="font-rope font-light">Contact</a>
                         
                         <a href="" className="bg-black px-3 py-2 font-classy border border-white/30" style = {{textShadow: '0 0 8px white'}}>
