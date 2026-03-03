@@ -127,10 +127,10 @@ const sections = [
                                 {section.description}
                             </p>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-items-center">
                             {section.items.map((item, i) => (
-                                <div key={i} className="w-60 text-center space-y-4 flex flex-col justify-between">
-                                    <img src={image1} alt={item.name} className="w-full rounded-lg" />img
+                                <div key={i} className=" lg:max-w-[70%] text-center space-y-4 flex flex-col justify-between">
+                                    <img src={image1} alt={item.name} className="w-full rounded-lg" />
                                     <h4 className="text-xl text-white font-classy">{item.name}</h4>
                                     <p className="text-black bg-white/90 font-rope">
                                         {item.price}
