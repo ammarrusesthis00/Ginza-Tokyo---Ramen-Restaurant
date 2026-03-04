@@ -29,8 +29,8 @@ export default function Process() {
   return (
     <section className="w-[90%] mx-auto max-w-6xl py-24 space-y-6">
         <div className="space-y-1">
-            <h2 className="font-classy text-white text-2xl">Our Crafting Process</h2>
-            <p className="text-gray-100 max-w-[90ch] font-rope">We pick the best ingredients and craft every bowl of ramen with care.</p>
+            <h2 className="font-classy text-white md:text-3xl text-2xl">Our Crafting Process</h2>
+            <p className="text-gray-100 max-w-[90ch] font-rope font-light">We pick the best ingredients and craft every bowl of ramen with care.</p>
         </div>
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start justify-items-center bg-black p-8 rounded-lg">
   {steps.map((step, i) => (
@@ -38,7 +38,7 @@ export default function Process() {
     key={i}
     className="lg:max-w-[90%] text-center space-y-4 flex flex-col items-center justify-between"
     >
-     <div className="flex items-center space-x-0">
+     <div className="flex items-center space-x-2">
       <div className="w-18 h-[4px] via-[#2a2a2a] bg-gradient-to-r from-[#0f0f0f] to-[#1b1b1b]"></div>
   {/* Number Ball */}
   <div className="w-10 h-10 flex items-center justify-center 
