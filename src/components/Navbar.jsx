@@ -3,7 +3,7 @@ import { Menu } from "lucide-react";
 export default function Navbar() {
     return (
         <>
-            <nav className="text-white flex flex-col pt-5">
+            <nav className="text-white flex flex-col pt-5 md:pb-5">
                 <div id="mobile" className="md:hidden">
                     <div className="flex items-center justify-between">
                         <h2 className="text-xl font-classy">Ginza Tokyo</h2>
