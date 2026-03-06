@@ -15,9 +15,17 @@
     font-family: 'Manrope', sans-serif;
 }
 
-
 body {
     background-color: #191919;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #ededed;
+    color: #000;
 }
 
 .button {
