@@ -1,4 +1,5 @@
-import { Menu } from "lucide-react";
+import { NavLink } from "react-router-dom";
+import BurgerMenu from "./BurgerMenu";
 
 export default function Navbar() {
     return (
@@ -7,7 +8,7 @@ export default function Navbar() {
                 <div id="mobile" className="md:hidden">
                     <div className="flex items-center justify-between">
                         <h2 className="text-xl font-classy">Ginza Tokyo</h2>
-                        <Menu />
+                        <BurgerMenu />
                     </div>
                 </div>
 
@@ -16,16 +17,16 @@ export default function Navbar() {
                         <h2 className="text-2xl font-classy">Ginza Tokyo</h2>
                     </div>
                     <ul className="flex items-center gap-6">
-                        <a href="" className="font-rope font-light">About Us</a>
-                        <a href="" className="font-rope font-light">Gallery</a>
-                        <a href="" className="font-rope font-light">Location</a>
-                        <a href="" className="font-rope font-light">Contact</a>
+                        <NavLink to="/about" className="font-rope font-light">About Us</NavLink>
+                        <a href="#gallery" className="font-rope font-light">Gallery</a>
+                        <a href="#reservation" className="font-rope font-light">Location</a>
+                        <NavLink to="/contact" className="font-rope font-light">Contact</NavLink>
                         
-                        <a href="" className="bg-black px-3 py-2 font-classy border border-white/30" style = {{textShadow: '0 0 8px white'}}>
+                        <NavLink to={"/online-order"} className="bg-black px-3 py-2 font-classy border border-white/30" style = {{textShadow: '0 0 8px white'}}>
                             Order Online
-                        </a>
+                        </NavLink>
                     </ul>
-                    <Menu />
+                    <BurgerMenu />
                 </div>
 
                 <div id="desktop" className="hidden lg:flex items-center justify-between">
@@ -35,18 +36,18 @@ export default function Navbar() {
 
                     <ul className="flex items-center gap-3">
                         <div className="hidden md:flex items-center gap-9">
-                            <a href="" className="font-rope font-light">Menu</a>
-                            <a href="" className="font-rope font-light">About Us</a>
-                            <a href="" className="font-rope font-light">Gallery</a>
-                            <a href="" className="font-rope font-light">Location</a>
-                            <a href="" className="font-rope font-light">Contact</a>
+                            <a href="#menu" className="font-rope font-light">Menu</a>
+                            <NavLink to="/about" className="font-rope font-light">About Us</NavLink>
+                            <a href="#gallery" className="font-rope font-light">Gallery</a>
+                            <a href="#reservation" className="font-rope font-light">Location</a>
+                            <NavLink to="/contact" className="font-rope font-light">Contact</NavLink>
 
-                            <a href="" className="bg-black px-3 py-2 font-classy border border-white/30" style = {{textShadow: '0 0 8px white'}}>
+                            <NavLink to={"/online-order"} className="bg-black px-3 py-2 font-classy border border-white/30" style = {{textShadow: '0 0 8px white'}}>
                                 Order Online
-                            </a>
+                            </NavLink>
                         </div>
                     </ul>
-                    <Menu />
+                    <BurgerMenu />
                 </div>
             </nav>
         </>
