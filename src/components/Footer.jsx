@@ -1,5 +1,6 @@
 import PrimaryButton from "../components/PrimaryButton";
 import  SecondaryButton  from "../components/MenuButton";
+import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="w-[90%] p-8 rounded-lg mx-auto max-w-6xl pb-8 bg-black space-y-10">
@@ -12,7 +13,7 @@ export default function Footer() {
               Explore the links below, subscribe to our newsletter for exclusive updates, and visit us to savor our authentic, premium ramen experience.
             </p>
         </div>
-          <PrimaryButton text={"Book Now"} />
+          <PrimaryButton text={"Book Now"} href={"#reservation"} />
       </div>
 
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-6 text-white">
@@ -20,11 +21,11 @@ export default function Footer() {
         <div className="space-y-3">
           <h3 className="font-classy text-lg">Navigation</h3>
           <ul className="space-y-2">
-            <li><a href="#home" className="hover:text-gray-300 duration-400 transition-all">Home</a></li>
+            <li><Link to="/" className="hover:text-gray-300 duration-400 transition-all">Home</Link></li>
             <li><a href="#menu" className="hover:text-gray-300 duration-400 transition-all">Menu</a></li>
-            <li><a href="#reservations" className="hover:text-gray-300 duration-400 transition-all">Reservations</a></li>
+            <li><a href="#reservation" className="hover:text-gray-300 duration-400 transition-all">Reservations</a></li>
             <li><a href="#about" className="hover:text-gray-300 duration-400 transition-all">About</a></li>
-            <li><a href="#contact" className="hover:text-gray-300 duration-400 transition-all">Contact</a></li>
+            <li><Link to="/contact" className="hover:text-gray-300 duration-400 transition-all">Contact</Link></li>
           </ul>
         </div>
 
@@ -32,11 +33,10 @@ export default function Footer() {
         <div className="space-y-3">
           <h3 className="font-classy text-lg">Page Navigation</h3>
           <ul className="space-y-2">
-            <li><a href="#home" className="hover:text-gray-300 duration-400 transition-all">HomePage</a></li>
-            <li><a href="#menu" className="hover:text-gray-300 duration-400 transition-all">MenuPage</a></li>
-            <li><a href="#reservations" className="hover:text-gray-300 duration-400 transition-all">OnlineOrder Page</a></li>
-            <li><a href="#about" className="hover:text-gray-300 duration-400 transition-all">AboutPage</a></li>
-            <li><a href="#contact" className="hover:text-gray-300 duration-400 transition-all">ContactPage</a></li>
+            <li><Link to={"/"} className="hover:text-gray-300 duration-400 transition-all">HomePage</Link></li>
+            <li><Link to={"/menu"} className="hover:text-gray-300 duration-400 transition-all">MenuPage</Link></li>
+            <li><Link to={"/online-order"} className="hover:text-gray-300 duration-400 transition-all">OnlineOrder Page</Link></li>
+            <li><Link to={"/contact"} className="hover:text-gray-300 duration-400 transition-all">ContactPage</Link></li>
           </ul>
         </div>
 
@@ -45,8 +45,8 @@ export default function Footer() {
           <h3 className="font-classy text-lg">Menu</h3>
           <ul className="space-y-2">
             <li><a href="#ramen" className="hover:text-gray-300 duration-400 transition-all">Ramen</a></li>
-            <li><a href="#appetizers" className="hover:text-gray-300 duration-400 transition-all">Appetizers</a></li>
-            <li><a href="#drinks" className="hover:text-gray-300 duration-400 transition-all">Drinks</a></li>
+            <li><a href="#specials" className="hover:text-gray-300 duration-400 transition-all">Specials</a></li>
+            <li><a href="#desserts" className="hover:text-gray-300 duration-400 transition-all">Drinks</a></li>
             <li><a href="#desserts" className="hover:text-gray-300 duration-400 transition-all">Desserts</a></li>
           </ul>
         </div>
