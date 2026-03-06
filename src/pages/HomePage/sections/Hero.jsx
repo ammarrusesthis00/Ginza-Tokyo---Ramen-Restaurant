@@ -9,7 +9,13 @@ import MenuButton from "../../../components/MenuButton";
 export default function Hero() {
 
   return (
-        <header className="space-y-10 w-[90%] mx-auto max-w-6xl">
+        <header className="space-y-10 w-[90%] mx-auto max-w-6xl select-none">
+             {/* Background Japanese text */}
+      <div className="absolute inset-0 max-h-[600px] flex items-center justify-center pointer-events-none">
+        <span className="text-white text-[120px] md:text-[180px] lg:text-[220px] font-bold opacity-10 blur-sm select-none -z-1">
+          銀座東京
+        </span>
+      </div>
                 <Navbar />
             <div className=" grid lg:grid-cols-2 items-center md:gap-12 grid-cols-1 gap-12">
                 <div className="space-y-20">
@@ -24,7 +30,7 @@ export default function Hero() {
                       </p>
                       </div>
                       <div className="flex items-center gap-3">
-                          <PrimaryButton href={'#'} text={'Book Now'} />
+                          <PrimaryButton href={'#reservation'} text={'Book Now'} />
                           <MenuButton />
                       </div>
                       
@@ -35,7 +41,7 @@ export default function Hero() {
 
 
         <div className="max-h-[90vh]">
-          <img src={Image2} alt=""  className="rounded-lg w-full max-w-xl mx-auto"/>
+          <img src={Image2} alt=""  className="rounded-lg w-full max-w-xl mx-auto opacity-80"/>
         </div>
         </div>
         </header>
