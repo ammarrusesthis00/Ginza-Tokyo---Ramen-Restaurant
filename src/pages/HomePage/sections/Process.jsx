@@ -28,10 +28,17 @@ export default function Process() {
 ];
   return (
     <section className="w-[90%] mx-auto max-w-6xl py-24 space-y-6">
-        <div className="space-y-1">
-            <h2 className="font-classy text-white md:text-3xl text-2xl">Our Crafting Process</h2>
-            <p className="text-gray-100 max-w-[90ch] font-rope font-light">We pick the best ingredients and craft every bowl of ramen with care.</p>
-        </div>
+      <div className="space-y-3">
+  <h3 className="text-yellow-400 text-xs font-light font-rope tracking-widest bg-gradient-to-br from-[#0f0f0f] via-[#262626] to-[#0f0f0f] inline-block rounded-full px-3 py-2 shadow-[0px_0px_3px_rgba(255,255,255,0.3)] p-4 bg-gray-800 text-white">
+    PREMIUM CRAFT
+  </h3>
+  <div className="space-y-2">
+    <h2 className="font-classy text-white md:text-3xl text-2xl">Our Crafting Process</h2>
+    <p className="text-gray-100 max-w-[90ch] font-rope font-light">
+      We pick the best ingredients and craft every bowl of ramen with care.
+    </p>
+  </div>
+</div>
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start justify-items-center bg-black p-8 rounded-lg">
   {steps.map((step, i) => (
     <div
